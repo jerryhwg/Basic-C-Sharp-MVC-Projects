@@ -1,0 +1,28 @@
+﻿@model TechAcadStudentsMVC.Models.Instructor
+
+<!-- To get access to the model passed from the controller, add model ToolboxDataAttribute the top of the cshtml file -->
+
+@{
+    ViewBag.Title = "Instructor";
+}
+
+<h2>Instructor</h2>
+
+<h5>
+    Details for Instructor with ID: @ViewBag.Id <!-- razor syntax to reference the value we store in ViewBag -->
+</h5>
+
+<p>
+    Further details about the instructor:
+</p>
+<ul>
+    <li>
+        Another Id: @Model.Id <!-- To reference the model passed from the controller, just type Model (must capaitalize it -->
+    </li>
+    <li>
+        First Name: @Model.FirstName
+    </li>
+    <li>
+        Last Name: @Model.LastName
+    </li>
+</ul>
