@@ -29,12 +29,12 @@ namespace NewsletterAppMVC.Controllers
                 // The following shows a simple line replaces the detailed db connection (ADO.NET) by using EF (EntityFramework)
                 using (NewsletterEntities db = new NewsletterEntities())
                 {
-                    var signup = new SignUp();
+                    var signup = new SignUp(); // Q: SignUp: Model > SignUp.cs (SignUp class or datatype)
                     signup.FirstName = firstName; // map the property for the object to the parameter that came in
                     signup.LastName = lastName;
                     signup.EmailAddress = emailAddress;
 
-                    db.SignUps.Add(signup);
+                    db.SignUps.Add(signup); // Q: SignUps: database table name
                     db.SaveChanges();
                 }
                 // The following is db connection without Entity framework
