@@ -18,7 +18,7 @@ namespace NewsletterAppMVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult SignUp(string firstName, string lastName, string emailAddress)
+        public ActionResult SignUp(string firstName, string lastName, string emailAddress) // SignUp: method name, SingUp.cs in Models
         {
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress))
             {
@@ -29,12 +29,12 @@ namespace NewsletterAppMVC.Controllers
                 // The following shows a simple line replaces the detailed db connection (ADO.NET) by using EF (EntityFramework)
                 using (NewsletterEntities db = new NewsletterEntities())
                 {
-                    var signup = new SignUp(); // Q: SignUp: Model > SignUp.cs (SignUp class or datatype)
+                    var signup = new SignUp(); // SignUp: Model > SignUp.cs (class, datatype)
                     signup.FirstName = firstName; // map the property for the object to the parameter that came in
                     signup.LastName = lastName;
                     signup.EmailAddress = emailAddress;
 
-                    db.SignUps.Add(signup); // Q: SignUps: database table name
+                    db.SignUps.Add(signup); // SignUps (Models > Model1.Context.tt > Model1.Context.cs: public virtual DbSet<SignUp> SignUps { get; set; })
                     db.SaveChanges();
                 }
                 // The following is db connection without Entity framework
