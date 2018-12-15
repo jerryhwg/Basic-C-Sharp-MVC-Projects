@@ -15,7 +15,7 @@ namespace CarInsurance.Controllers
         }
 
         [HttpPost]
-        public ActionResult QuoteForm(string firstName, string lastName, string emailAddress, int carYear, string carMake, string carModel, int ticketNumber)
+        public ActionResult QuoteForm(string firstName, string lastName, string emailAddress, int carYear, string carMake, string carModel, int ticketNumber) // QuoteForm (public partial class QuoteForm in QuoteForm.cs)
         {
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress) || string.IsNullOrEmpty(carYear.ToString()) || string.IsNullOrEmpty(carMake) || string.IsNullOrEmpty(carModel) || string.IsNullOrEmpty(ticketNumber.ToString()))
             {
@@ -23,9 +23,9 @@ namespace CarInsurance.Controllers
             }
             else
             {
-                using (CarInsuranceEntities db = new CarInsuranceEntities())
+                using (CarInsuranceEntities db = new CarInsuranceEntities()) // using CarInsurance.Models for database connection
                 {
-                    var quote = new QuoteForm();
+                    var quote = new QuoteForm(); // Models - QuoteForm.cs (insert data input to database table using Model) / use var because the datatype is obvious
                     quote.FirstName = firstName;
                     quote.LastName = lastName;
                     quote.EmailAddress = emailAddress;
@@ -34,7 +34,7 @@ namespace CarInsurance.Controllers
                     quote.CarModel = carModel;
                     quote.TicketNumber = ticketNumber;
 
-                    db.QuoteForms.Add(quote); // 242:6:42, Models -> CarInsurance.Context.tt -> CarInsurance.Context.cs
+                    db.QuoteForms.Add(quote); // 242:6:42, Models -> CarInsurance.Context.tt -> CarInsurance.Context.cs (= database table name)
                     db.SaveChanges();
                 }
                 return View("Success");

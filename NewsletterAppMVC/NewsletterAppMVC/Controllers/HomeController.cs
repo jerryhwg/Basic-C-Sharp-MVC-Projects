@@ -18,7 +18,7 @@ namespace NewsletterAppMVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult SignUp(string firstName, string lastName, string emailAddress) // SignUp: method name, SingUp.cs in Models
+        public ActionResult SignUp(string firstName, string lastName, string emailAddress) // SignUp: method, SingUp.cs in Models
         {
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress))
             {

@@ -21,6 +21,7 @@ namespace NewsletterAppMVC.Controllers
                 var signups = (from c in db.SignUps
                                where c.Removed == null
                                select c).ToList();
+                
                 var signupVms = new List<SignupVm>(); // if it's obvious what the data type is, you don't list it twice, use var instead of List<SignupVm>
                 foreach (var signup in signups)
                 {
