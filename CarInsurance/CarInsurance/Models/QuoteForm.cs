@@ -18,9 +18,12 @@ namespace CarInsurance.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
+        public Nullable<System.DateTime> DateofBirth { get; set; }
         public Nullable<int> CarYear { get; set; }
         public string CarMake { get; set; }
         public string CarModel { get; set; }
         public Nullable<int> TicketNumber { get; set; }
+        public Nullable<bool> DUI { get; set; }
+        public Nullable<bool> FullCoverage { get; set; }
     }
 }

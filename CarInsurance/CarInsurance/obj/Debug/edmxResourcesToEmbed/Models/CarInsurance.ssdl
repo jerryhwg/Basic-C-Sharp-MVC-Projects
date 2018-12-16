@@ -8,10 +8,13 @@
     <Property Name="FirstName" Type="varchar" MaxLength="25" />
     <Property Name="LastName" Type="varchar" MaxLength="25" />
     <Property Name="EmailAddress" Type="varchar" MaxLength="50" />
+    <Property Name="DateofBirth" Type="date" />
     <Property Name="CarYear" Type="int" />
     <Property Name="CarMake" Type="varchar" MaxLength="25" />
     <Property Name="CarModel" Type="varchar" MaxLength="25" />
     <Property Name="TicketNumber" Type="int" />
+    <Property Name="DUI" Type="bit" />
+    <Property Name="FullCoverage" Type="bit" />
   </EntityType>
   <EntityContainer Name="CarInsuranceModelStoreContainer">
     <EntitySet Name="QuoteForm" EntityType="Self.QuoteForm" Schema="dbo" store:Type="Tables" />

@@ -8,10 +8,13 @@
     <Property Name="FirstName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
     <Property Name="LastName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
     <Property Name="EmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateofBirth" Type="DateTime" Precision="0" />
     <Property Name="CarYear" Type="Int32" />
     <Property Name="CarMake" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
     <Property Name="CarModel" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
     <Property Name="TicketNumber" Type="Int32" />
+    <Property Name="DUI" Type="Boolean" />
+    <Property Name="FullCoverage" Type="Boolean" />
   </EntityType>
   <EntityContainer Name="CarInsuranceEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="QuoteForms" EntityType="Self.QuoteForm" />

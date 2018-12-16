@@ -13,10 +13,13 @@
           <Property Name="FirstName" Type="varchar" MaxLength="25" />
           <Property Name="LastName" Type="varchar" MaxLength="25" />
           <Property Name="EmailAddress" Type="varchar" MaxLength="50" />
+          <Property Name="DateofBirth" Type="date" />
           <Property Name="CarYear" Type="int" />
           <Property Name="CarMake" Type="varchar" MaxLength="25" />
           <Property Name="CarModel" Type="varchar" MaxLength="25" />
           <Property Name="TicketNumber" Type="int" />
+          <Property Name="DUI" Type="bit" />
+          <Property Name="FullCoverage" Type="bit" />
         </EntityType>
         <EntityContainer Name="CarInsuranceModelStoreContainer">
           <EntitySet Name="QuoteForm" EntityType="Self.QuoteForm" Schema="dbo" store:Type="Tables" />
@@ -33,10 +36,13 @@
           <Property Name="FirstName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="LastName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="EmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DateofBirth" Type="DateTime" Precision="0" />
           <Property Name="CarYear" Type="Int32" />
           <Property Name="CarMake" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="CarModel" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="TicketNumber" Type="Int32" />
+          <Property Name="DUI" Type="Boolean" />
+          <Property Name="FullCoverage" Type="Boolean" />
         </EntityType>
         <EntityContainer Name="CarInsuranceEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="QuoteForms" EntityType="Self.QuoteForm" />
@@ -50,6 +56,9 @@
           <EntitySetMapping Name="QuoteForms">
             <EntityTypeMapping TypeName="CarInsuranceModel.QuoteForm">
               <MappingFragment StoreEntitySet="QuoteForm">
+                <ScalarProperty Name="FullCoverage" ColumnName="FullCoverage" />
+                <ScalarProperty Name="DUI" ColumnName="DUI" />
+                <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />

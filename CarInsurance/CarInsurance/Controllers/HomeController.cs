@@ -15,9 +15,9 @@ namespace CarInsurance.Controllers
         }
 
         [HttpPost]
-        public ActionResult QuoteForm(string firstName, string lastName, string emailAddress, int carYear, string carMake, string carModel, int ticketNumber) // QuoteForm (public partial class QuoteForm in QuoteForm.cs)
+        public ActionResult QuoteForm(string firstName, string lastName, string emailAddress, DateTime dateofBirth, int carYear, string carMake, string carModel, int ticketNumber, bool dui = false, bool coverage = false) // QuoteForm (public partial class QuoteForm in QuoteForm.cs)
         {
-            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress) || string.IsNullOrEmpty(carYear.ToString()) || string.IsNullOrEmpty(carMake) || string.IsNullOrEmpty(carModel) || string.IsNullOrEmpty(ticketNumber.ToString()))
+            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress) || string.IsNullOrEmpty(dateofBirth.ToString()) || string.IsNullOrEmpty(carYear.ToString()) || string.IsNullOrEmpty(carMake) || string.IsNullOrEmpty(carModel) || string.IsNullOrEmpty(ticketNumber.ToString()) || string.IsNullOrEmpty(dui.ToString()) || string.IsNullOrEmpty(coverage.ToString()))
             {
                 return View("~/Views/Shared/Error.cshtml");
             }
@@ -29,10 +29,13 @@ namespace CarInsurance.Controllers
                     quote.FirstName = firstName;
                     quote.LastName = lastName;
                     quote.EmailAddress = emailAddress;
+                    quote.DateofBirth = dateofBirth;
                     quote.CarYear = carYear;
                     quote.CarMake = carMake;
                     quote.CarModel = carModel;
                     quote.TicketNumber = ticketNumber;
+                    quote.DUI = dui;
+                    quote.FullCoverage = coverage;
 
                     db.QuoteForms.Add(quote); // 242:6:42, Models -> CarInsurance.Context.tt -> CarInsurance.Context.cs (= database table name)
                     db.SaveChanges();
