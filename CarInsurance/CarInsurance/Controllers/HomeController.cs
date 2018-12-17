@@ -102,7 +102,7 @@ namespace CarInsurance.Controllers
 
                     quote.FinalQuote = finalQuote;
 
-                    db.QuoteForms.Add(quote); // 242:6:42, Models -> CarInsurance.Context.tt -> CarInsurance.Context.cs (= database table name)
+                    db.QuoteForms.Add(quote); // 242:6:42, Models -> CarInsurance.Context.tt -> CarInsurance.Context.cs (database table name)
                     db.SaveChanges();
                 }
                 return View("Success");
