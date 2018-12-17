@@ -14,9 +14,9 @@ namespace AutoInsurance.Controllers
             {
                 var driver = new Drivers()
                 {
-                    FirstName = "Bill",
-                    LastName = "Gates",
-                    EmailAddress = "billgates@example.com"
+                    FirstName = "Steve",
+                    LastName = "Jobs",
+                    EmailAddress = "stevejobs@example.com"
                 };
                 db.Drivers.Add(driver);
                 db.SaveChanges();
