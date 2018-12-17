@@ -15,6 +15,7 @@
     <Property Name="TicketNumber" Type="Int32" />
     <Property Name="DUI" Type="Boolean" />
     <Property Name="FullCoverage" Type="Boolean" />
+    <Property Name="FinalQuote" Type="Decimal" Precision="18" Scale="0" />
   </EntityType>
   <EntityContainer Name="CarInsuranceEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="QuoteForms" EntityType="Self.QuoteForm" />

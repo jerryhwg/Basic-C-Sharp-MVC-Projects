@@ -24,11 +24,12 @@ namespace CarInsurance.Controllers
                     quoteVm.FirstName = quote.FirstName;
                     quoteVm.LastName = quote.LastName;
                     quoteVm.EmailAddress = quote.EmailAddress;
+                    quoteVm.FinalQuote = Convert.ToDecimal(quote.FinalQuote);
                     quoteFormVms.Add(quoteVm);
                 }
 
                 return View(quoteFormVms);
-            }
+            }       
         }
     }
 }

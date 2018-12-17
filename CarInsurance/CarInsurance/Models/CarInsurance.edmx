@@ -20,6 +20,7 @@
           <Property Name="TicketNumber" Type="int" />
           <Property Name="DUI" Type="bit" />
           <Property Name="FullCoverage" Type="bit" />
+          <Property Name="FinalQuote" Type="decimal" Precision="18" Scale="0" />
         </EntityType>
         <EntityContainer Name="CarInsuranceModelStoreContainer">
           <EntitySet Name="QuoteForm" EntityType="Self.QuoteForm" Schema="dbo" store:Type="Tables" />
@@ -43,6 +44,7 @@
           <Property Name="TicketNumber" Type="Int32" />
           <Property Name="DUI" Type="Boolean" />
           <Property Name="FullCoverage" Type="Boolean" />
+          <Property Name="FinalQuote" Type="Decimal" Precision="18" Scale="0" />
         </EntityType>
         <EntityContainer Name="CarInsuranceEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="QuoteForms" EntityType="Self.QuoteForm" />
@@ -56,6 +58,7 @@
           <EntitySetMapping Name="QuoteForms">
             <EntityTypeMapping TypeName="CarInsuranceModel.QuoteForm">
               <MappingFragment StoreEntitySet="QuoteForm">
+                <ScalarProperty Name="FinalQuote" ColumnName="FinalQuote" />
                 <ScalarProperty Name="FullCoverage" ColumnName="FullCoverage" />
                 <ScalarProperty Name="DUI" ColumnName="DUI" />
                 <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />

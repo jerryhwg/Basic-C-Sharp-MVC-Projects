@@ -4,6 +4,7 @@
     <EntitySetMapping Name="QuoteForms">
       <EntityTypeMapping TypeName="CarInsuranceModel.QuoteForm">
         <MappingFragment StoreEntitySet="QuoteForm">
+          <ScalarProperty Name="FinalQuote" ColumnName="FinalQuote" />
           <ScalarProperty Name="FullCoverage" ColumnName="FullCoverage" />
           <ScalarProperty Name="DUI" ColumnName="DUI" />
           <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />

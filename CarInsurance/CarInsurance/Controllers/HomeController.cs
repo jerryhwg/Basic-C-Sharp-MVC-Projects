@@ -37,6 +37,71 @@ namespace CarInsurance.Controllers
                     quote.DUI = dui;
                     quote.FullCoverage = coverage;
 
+                    var today = DateTime.Today;
+                    var age = today.Year - dateofBirth.Year;
+
+                    var finalQuote = 50m;
+
+                    if (age < 25 && age >= 18)
+                    {
+                        finalQuote += 25;
+                    }
+                    else if (age < 18)
+                    {
+                        finalQuote += 100;
+                    }
+                    else if (age >= 100)
+                    {
+                        finalQuote += 25;
+                    }
+
+                    if (carYear < 2000)
+                    {
+                        finalQuote += 25;
+                    }
+                    else if (carYear >= 2015)
+                    {
+                        finalQuote += 25;
+                    }
+
+                    if (carMake == "Porsche")
+                    {
+                        finalQuote += 25;
+                    }
+                    else if (carMake == "Porsche" && carModel == "911 Carrera")
+                    {
+                        finalQuote += 50;
+                    }
+
+                    if (ticketNumber >= 1)
+                    {
+                        finalQuote = finalQuote + (finalQuote * 10);
+                    }
+                    else
+                    {
+                        finalQuote += 0;
+                    }
+
+                    if (dui == true)
+                    {
+                        finalQuote = finalQuote + (finalQuote * .25m);
+                    }
+                    else
+                    {
+                        finalQuote += 0;
+                    }
+
+                    if (coverage == true)
+                    {
+                        finalQuote = finalQuote + (finalQuote * .5m);
+                    }
+                    else
+                    {
+                        finalQuote += 0;
+                    }
+
+                    quote.FinalQuote = finalQuote;
+
                     db.QuoteForms.Add(quote); // 242:6:42, Models -> CarInsurance.Context.tt -> CarInsurance.Context.cs (= database table name)
                     db.SaveChanges();
                 }
