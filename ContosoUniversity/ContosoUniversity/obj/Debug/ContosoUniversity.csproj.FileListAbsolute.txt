@@ -82,3 +82,7 @@ C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\
 C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.CopyComplete
 C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.dll
 C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.pdb
+C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\bin\PagedList.dll
+C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.dll
+C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\bin\PagedList.xml
+C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.xml
