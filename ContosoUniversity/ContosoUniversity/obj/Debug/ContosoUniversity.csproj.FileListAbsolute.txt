@@ -91,3 +91,4 @@ C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\
 C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.MaxLengthOnNames.resources
 C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.ColumnFirstName.resources
 C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.ComplexDataModel.resources
+C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.DepartmentSP.resources
