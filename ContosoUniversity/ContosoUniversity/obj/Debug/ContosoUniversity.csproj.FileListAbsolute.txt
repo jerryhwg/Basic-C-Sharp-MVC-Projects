@@ -86,3 +86,5 @@ C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\
 C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.dll
 C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\bin\PagedList.xml
 C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.xml
+C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.InitialCreate.resources
+C:\Users\jerry\Documents\Visual Studio 2017\Projects\Basic-C-Sharp-MVC-Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.GenerateResource.cache
