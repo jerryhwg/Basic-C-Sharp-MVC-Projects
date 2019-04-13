@@ -1,4 +1,4 @@
-# Basic-C-Sharp-MVC-Projects
+# C-Sharp-MVC-EF
 
 ### AutoInsurance
 C# MVC Entity Framework Code First Basic
